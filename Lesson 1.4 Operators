@@ -1,0 +1,24 @@
+// Possible solution to the lab.
+import UIKit
+
+var steps = 5000
+var caloriesBurned = 250.5
+let stepGoal = 10000
+let workoutCompleted = true
+
+// Operator: +=
+// Operands: steps, 2000
+steps += 2000
+
+// Operator: *=
+// Operands: caloriesBurned, 1.1
+caloriesBurned *= 1.1
+
+// Operator: -=
+// Operands: steps, 500
+steps -= 500
+
+print("Steps: \(steps)")
+print("Calories: \(caloriesBurned)")
+print("Goal: \(stepGoal)")
+print("Workout completed: \(workoutCompleted)")
