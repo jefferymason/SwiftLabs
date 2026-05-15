@@ -1,0 +1,36 @@
+import UIKit
+
+let age = 16
+let isMatinee = true
+let isMember = false
+
+var basePrice = 0
+
+// Switch statement with interval matching.
+switch age {
+case 0..<13:
+    basePrice = 8
+case 13..<65:
+    basePrice = 12
+default:
+    basePrice = 10
+}
+
+// If/Else statement with logical operator.
+if isMatinee && age >= 13 {
+    basePrice -= 2
+} else if isMatinee {
+    basePrice -= 1
+}
+
+// Second If/Else statement.
+if isMember {
+    basePrice -= 1
+} else {
+    basePrice += 0  // No discount
+}
+
+// Ternary operator.
+let ticketType = age < 13 ? "Child Ticket" : "Standard Ticket"
+
+print("\(ticketType): $\(basePrice)")
