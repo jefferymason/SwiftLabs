@@ -1,0 +1,26 @@
+import UIKit
+
+// Take name input
+print("Enter your name:", terminator: " ")
+let name = readLine() ?? ""
+
+// Greeting using interpolation
+let greeting = "Welcome, \(name)!"
+
+// Sentence using concatenation
+let sentenceConcat = "Your name is " + name + ". Welcome to coding!"
+
+// Sentence using interpolation
+let sentenceInterp = "Your name is \(name). Welcome to coding!"
+
+// Escape characters
+let quote = "He said, \"Swift is fun!\""
+let formatted = "Name:\t\(name)\nLet's learn Swift!"
+
+// Output
+print("\n" + greeting)
+print(sentenceConcat)
+print(sentenceInterp)
+print(quote)
+print(formatted)
+
