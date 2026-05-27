@@ -1,0 +1,34 @@
+// 1. Function with NO parameters
+func showMessage() {
+    print("Welcome to the Functions Lab!")
+}
+
+
+// 2. Function with MULTIPLE parameters
+func describePerson(name: String, age: Int) {
+    print("\(name) is \(age) years old.")
+}
+
+
+// 3. Function with a RETURN TYPE
+func addNumbers(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+
+// 4. Additional function (student choice)
+func greetUser(name: String) {
+    print("Hello, \(name)!")
+}
+
+
+// 🔽 Calling all functions
+
+showMessage()
+
+describePerson(name: "Jeff", age: 30) 
+
+let sum = addNumbers(a: 5, b: 7)  
+print("The sum is \(sum)")
+
+greetUser(name: "Mason") 
