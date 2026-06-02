@@ -1,0 +1,35 @@
+
+struct Pet {
+    
+    // Properties: stored data for each pet
+    var name: String
+    var age: Int
+    var weight: Double {
+        didSet {
+            print("\(name)'s weight is now \(weight)")
+        }
+    }
+    
+    // Computed Property: calculates value instead of storing it
+    var humanYears: Int {
+        age * 7
+    }
+    
+    // Custom Initializer: sets name and weight, age defaults to 0
+    init(name: String, weight: Double) {
+        self.name = name
+        self.age = 0
+        self.weight = weight
+    }
+    
+    // Method: describes the pet
+    func describePet() {
+        print("\(name) is \(age) years old and weighs \(weight) pounds.")
+    }
+    
+    // Mutating Method: modifies the pet's data
+    mutating func celebrateBirthday() {
+        age += 1
+        print("Happy Birthday! \(name) is now \(age) years old.")
+    }
+}
