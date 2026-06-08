@@ -1,0 +1,23 @@
+// Base Class
+class Creature {
+    
+    // State
+    var name: String
+    var health: Int
+    
+    // Initializer
+    init(name: String, health: Int) {
+        self.name = name
+        self.health = health
+    }
+    
+    // Behavior
+    func description() -> String {
+        return "\(name) has \(health) health."
+    }
+    
+    // Behavior
+    func takeDamage(amount: Int) {
+        health -= amount
+    }
+}
