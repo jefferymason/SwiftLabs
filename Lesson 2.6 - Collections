@@ -1,0 +1,51 @@
+// Create an array of 5 student names
+var students = ["Alice", "Bob", "Charlie", "Diana", "Ethan"]
+
+// Add a new student
+students.append("Frank")
+
+// Remove one student (remove "Charlie")
+if let index = students.firstIndex(of: "Charlie") {
+    students.remove(at: index)
+}
+
+// Print all students
+print("Student List:")
+for student in students {
+    print(student)
+}
+
+// Create a set of enrolled course codes
+var courses: Set = ["CS101", "MATH202", "ENG150", "BIO110"]
+
+// Try adding duplicates
+courses.insert("CS101")
+courses.insert("MATH202")
+
+// Print the set
+print("\nCourses:")
+print(courses)
+
+// Check if a course exists
+let courseToCheck = "CS101"
+
+if courses.contains(courseToCheck) {
+    print("\(courseToCheck) is in the set of courses.")
+} else {
+    print("\(courseToCheck) is NOT in the set of courses.")
+}
+
+// Create a dictionary of student names and grades
+var grades = ["Alice": 90, "Bob": 85, "Diana": 88]
+
+// Add a new student grade
+grades["Ethan"] = 92
+
+// Update a grade
+grades["Bob"] = 95
+
+// Print all students and grades
+print("\nStudent Grades:")
+for (student, grade) in grades {
+    print("\(student): \(grade)")
+}
