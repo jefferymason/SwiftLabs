@@ -1,0 +1,41 @@
+// ----------------------
+// Part 1: For-In Loop
+// ----------------------
+
+// Print numbers from 1 to 5
+for number in 1...5 {
+    print(number)
+}
+
+// Print each number multiplied by 2
+for number in 1...5 {
+    print(number * 2)
+}
+
+// Print a short sentence 5 times
+for _ in 1...5 {
+    print("Loops are useful!")
+}
+
+// ----------------------
+// Part 2: While Loop
+// ----------------------
+
+var count = 1
+
+while count <= 5 {
+    print(count)
+    count += 1   // important: prevents infinite loop
+}
+// ----------------------
+// Part 3: Repeat-While Loop
+// ----------------------
+
+var attempts = 1
+
+repeat {
+    print("Attempt #\(attempts)")
+    attempts += 1
+} while attempts <= 3
+
+print("Finished attempts.")
