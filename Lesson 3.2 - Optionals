@@ -1,0 +1,20 @@
+struct Movie {
+    var title: String
+    var rating: Double?
+}
+
+let movie1 = Movie(title: "Inception", rating: 8.8)
+let movie2 = Movie(title: "Coming Soon", rating: nil)
+let movie3 = Movie(title: "Interstellar", rating: 8.6)
+
+let movies = [movie1, movie2, movie3]
+
+// Loop through the movies
+for movie in movies {
+    // Safely unwrap the optional rating
+    if let rating = movie.rating {
+        print("\(movie.title) has a rating of \(rating)")
+    } else {
+        print("\(movie.title) has no rating available")
+    }
+}
