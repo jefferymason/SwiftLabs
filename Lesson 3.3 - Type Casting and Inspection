@@ -1,0 +1,25 @@
+class Device {}
+
+class Light: Device {
+    func turnOn() {
+        print("Light is on")
+    }
+}
+
+class Fan: Device {
+    func spin() {
+        print("Fan is spinning")
+    }
+}
+
+// Mixed collection
+let devices: [Device] = [Light(), Fan(), Light()]
+
+// Loop through devices 
+for device in devices {
+    if let light = device as? Light {
+        light.turnOn()
+    } else if let fan = device as? Fan {
+        fan.spin()
+    }
+}
