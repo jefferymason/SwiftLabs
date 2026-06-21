@@ -1,0 +1,13 @@
+func checkPassword(_ password: String?) {
+    guard let password = password else {
+        print("No password")
+        return
+    }
+
+    guard password.count >= 8 else {
+        print("Too short")
+        return
+    }
+
+    print("Valid password")
+}
