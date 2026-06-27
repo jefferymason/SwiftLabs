@@ -1,0 +1,42 @@
+// Create the enum
+enum FoodChoice {
+    case pizza
+    case burger
+    case salad
+    case tacos
+}
+
+// Create a variable using the enum
+let myFood = FoodChoice.pizza
+
+// Use a switch statement
+switch myFood {
+case .pizza:
+    print("You chose pizza!")
+case .burger:
+    print("You chose a burger!")
+default:
+    print("That's a good choice!")
+}
+
+
+// Create your own enum
+enum Weather {
+    case sunny
+    case rainy
+    case snowy
+    case cloudy
+}
+
+// Create a variable
+let todayWeather = Weather.rainy
+
+// Switch statement
+switch todayWeather {
+case .sunny:
+    print("It's bright outside!")
+case .rainy:
+    print("Don't forget an umbrella!")
+default:
+    print("Weather is moderate today.")
+}
